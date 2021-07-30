@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2.7rem;
+  }
+
+  body {
+    font-size: 2rem;
+  }
+
+  .box .box_cyan {
+    width: 50%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.box {
+  padding: 3rem 5rem;
+  width: 100%;
+}
+
+.box_white {
+  background: #fff;
+}
+
+.box_white h2 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 2rem;
+}
+
+.box_white h4 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 2rem;
+}
+
+.box_white p {
+  color: hsl(218, 22%, 67%);
+}
+
+.box_cyan {
+  background: hsl(179, 62%, 43%);
+}
+
+.box_cyan h2 {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 2rem;
+}
+
+.price {
+  color: hsl(204, 43%, 93%);
+  font-size: 3rem;
+}
+
+.box_cyan p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.period,
+.box_cyan p {
+  color: hsl(204, 43%, 93%);
+  opacity: 0.5;
+}
+
+.button {
+  padding: 1.5rem 3rem;
+  background: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+  width: 100%;
+  text-align: center;
+}
+
+.box_opacity {
+  opacity: 0.7;
+}
+
+.list {
+  list-style: none;
+  color: hsl(204, 43%, 93%);
+}
